@@ -7,13 +7,14 @@ def FizzBuzz():
 
     for number in range(1, 101):
 
-        #necessary to check this first because it's first in order
         if number % 3 == 0 and number % 5 == 0:
             print ('FizzBuzz')
 
+        # only want to grab divisible by 3 after first case
         elif number % 3 == 0: 
             print('Fizz')
 
+         # only want to grab divisible by 5 after first case
         elif number % 5 == 0:
             print ('Buzz')
 
