@@ -20,7 +20,7 @@ namespace Polymorphism_2
         protected string Name;
         protected int Damage;
 
-        //allows this function to be overridden. If it isn't uses the default functionality
+        //allows this function to be overridden. If it isn't: uses the default functionality
         public virtual void Attack()
         {
             Console.WriteLine($"{Name} attacks, dealing {Damage} damage!");
