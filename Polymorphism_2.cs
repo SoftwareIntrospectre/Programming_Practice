@@ -19,7 +19,9 @@ namespace Polymorphism_2
     {
         protected string Name;
         protected int Damage;
-        public void Attack()
+
+        //allows this function to be overridden. If it isn't uses the default functionality
+        public virtual void Attack()
         {
             Console.WriteLine($"{Name} attacks, dealing {Damage} damage!");
         }
@@ -32,6 +34,16 @@ namespace Polymorphism_2
             Name = "Elder Dragon";
             Damage = 25;
         }
+
+        //Within the ElderDragon class' scope: override base Attack() with Elder Dragon's Attack().
+        public override void Attack()
+        {
+            //uses parent class' default behavior
+            base.Attack();
+
+            //overridden behavior
+            Console.WriteLine("Elder Dragon is neat I guess.");
+        }
     }
 
     public class Goblin : Enemy
@@ -40,6 +52,13 @@ namespace Polymorphism_2
         {
             Name = "Goblin";
             Damage = 2;
+
+        }
+        
+        public override void Attack()
+        {
+            base.Attack();
+            Console.WriteLine("Goblin is a punk.");
         }
     }
 }
