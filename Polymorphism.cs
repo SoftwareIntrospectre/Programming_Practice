@@ -2,6 +2,18 @@ using System;
 
 namespace Polymorphism
 {
+    
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            var Tony = new Tony();
+            var Katie = new Katie();
+
+            Tony.Speak();
+            Katie.Speak();
+        }
+    }
 
     class Person
     {
@@ -27,18 +39,6 @@ namespace Polymorphism
         {
             name = "Katie";
             Console.WriteLine($"I'm badass {name}!");
-        }
-    }
-
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            var Tony = new Tony();
-            var Katie = new Katie();
-
-            Tony.Speak();
-            Katie.Speak();
         }
     }
 }
