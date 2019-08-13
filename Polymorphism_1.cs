@@ -1,14 +1,14 @@
 using System;
 
-namespace Polymorphism
+namespace Polymorphism_1
 {
     
     class Program
     {
         static void Main(string[] args)
         {
-            var Tony = new Tony();
-            var Katie = new Katie();
+            Person Tony = new Tony();
+            Person Katie = new Katie();
 
             Tony.Speak();
             Katie.Speak();
