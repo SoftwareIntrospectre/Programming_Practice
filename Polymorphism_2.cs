@@ -52,7 +52,6 @@ namespace Polymorphism_2
         {
             Name = "Goblin";
             Damage = 2;
-
         }
         
         public override void Attack()
