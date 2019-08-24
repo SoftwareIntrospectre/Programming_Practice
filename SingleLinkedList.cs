@@ -64,5 +64,46 @@ namespace SingleLinkedListProject
                 return true;
             }
         }
+
+        public void InsertInBeggining(int data)
+        {
+            Node temp = new Node(data);
+            temp.link = start;
+            start = temp;
+        }
+
+        public void InsertAtEnd(int data)
+        {
+            Node p;
+            Node temp = new Node(data);
+
+            if(start == null)
+            {
+                start = temp;
+                return;
+            }
+
+            p = start;
+            while(p.link != null)
+                p = p.link;
+        }
+
+        public void CreateList()
+        {
+            int i, n, data;
+
+            Console.Write("Enter the number of nodes : ");
+            n = Convert.ToInt32(Console.ReadLine());
+
+            if (n == 0)
+                return;
+                
+            for(i = 1; i < n; i++)
+            {
+                Console.Write("Enter the element to be inserted : ");
+                data = Convert.ToInt32(Console.ReadLine());
+                InsertAtEnd(data);
+            }
+        }
     }
 }
