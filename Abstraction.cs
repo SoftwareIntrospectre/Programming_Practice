@@ -1,5 +1,11 @@
-//Abstraction is the concept of classes using functionality from other classes, without needing to know how they work. Handy for re-use.
-
+/*
+    Abstraction is used for:
+        - hiding complexity
+        - avoiding repetitive code
+        - flexibility of implementation
+            - this uses partial abstraction because of Abstract Classes
+                - full abstraction be done with interfaces
+*/
 using System;
 
 namespace Abstraction
