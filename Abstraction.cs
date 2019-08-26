@@ -1,4 +1,4 @@
-//Abstraction is the concept of classes using functionality from other classes, without needing to know how they work
+//Abstraction is the concept of classes using functionality from other classes, without needing to know how they work. Handy for re-use.
 
 using System;
 
