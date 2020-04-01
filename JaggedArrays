@@ -24,11 +24,12 @@ public class Program
                 {
                     Console.WriteLine
                     (
-                    //prints the value of each index per "coordinate"
-                    "{0}{1}", intJaggedArray[i][j], 
-                    
-                    //Determines if j is at position [i].Length - 1 or not
-                    j == (intJaggedArray[i].Length - 1) ? "" : " ");
+                        //prints the value of each index per "coordinate"
+                        "{0}{1}", intJaggedArray[i][j], 
+
+                        //Determines if j is at position [i].Length - 1 or not
+                        j == (intJaggedArray[i].Length - 1) ? "" : " "
+                    );
                 }
                 
                 //Creates a new line between each iteration in the output
