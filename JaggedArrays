@@ -35,10 +35,9 @@ public class Program
                 for(int j = 0; j < intJaggedArray[i].Length; j++)
                 {
                     Console.WriteLine("{0}{1}", intJaggedArray[i][j], 
+                                      //Determines if j is at position [i].Length - 1 or not
                                       j == (intJaggedArray[i].Length - 1) ? "" : " ");
                 }
-                
-                Console.WriteLine();
             }
         }
     }
