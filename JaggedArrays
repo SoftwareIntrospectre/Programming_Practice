@@ -2,42 +2,37 @@ public class Program
     {
         public static void Main(string[] args)
         {
+            //C#'s array of arrays
             int[][] intJaggedArray = new int[3][];
             
-            intJaggedArray[0] = new int[3]
-            {
-               1,
-               7,
-               12
-            };
+            intJaggedArray[0] = new int[3]{1, 7, 12};
             
-            intJaggedArray[1] = new int[5]
-            {
-               18,
-               6,
-               1,
-               1,
-               10
-            };
+            intJaggedArray[1] = new int[5]{18, 6, 1, 1, 10};
             
-            intJaggedArray[2] = new int[2]
-            {
-               17,
-               12
-            };
+            intJaggedArray[2] = new int[2]{17, 12};
             
            Console.WriteLine("intJaggedArray[2][0] is: " + intJaggedArray[2][0]);
             
             // Loop through all items of a jagged array
             for (int i = 0; i < intJaggedArray.Length; i++)
             {
+                //print's first jagged array's first index (0, 1, or 2)
                 Console.WriteLine("Element({0}): ", i);
+                
+                //within first array, grab the elements of the second array
                 for(int j = 0; j < intJaggedArray[i].Length; j++)
                 {
-                    Console.WriteLine("{0}{1}", intJaggedArray[i][j], 
-                                      //Determines if j is at position [i].Length - 1 or not
-                                      j == (intJaggedArray[i].Length - 1) ? "" : " ");
+                    Console.WriteLine
+                    (
+                    //prints the value of each index per "coordinte"
+                    "{0}{1}", intJaggedArray[i][j], 
+                    
+                    //Determines if j is at position [i].Length - 1 or not
+                    j == (intJaggedArray[i].Length - 1) ? "" : " ");
                 }
+                
+                //Creates a new line between each iteration in the output
+                Console.WriteLine();
             }
         }
     }
