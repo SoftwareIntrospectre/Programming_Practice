@@ -24,7 +24,7 @@ public class Program
                 {
                     Console.WriteLine
                     (
-                    //prints the value of each index per "coordinte"
+                    //prints the value of each index per "coordinate"
                     "{0}{1}", intJaggedArray[i][j], 
                     
                     //Determines if j is at position [i].Length - 1 or not
