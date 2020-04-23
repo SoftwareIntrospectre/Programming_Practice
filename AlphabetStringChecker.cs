@@ -28,7 +28,7 @@ namespace StringCompression
             isStringOnlyAlphabet(testString5);
         }
 
-          public static bool isStringOnlyAlphabet(string inputString)
+          static bool isStringOnlyAlphabet(string inputString)
             {
                 //ensures there's no blank strings as an input
                 if(inputString == null || inputString == "")
