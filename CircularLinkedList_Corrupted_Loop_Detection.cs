@@ -5,7 +5,8 @@ namespace LoopDetection
     /*
             Given a Circular Linked List, implement an algorithm that returns the node at the beginning of the loop
 
-            DEFINITION: Circular Linked List: A (corrupt) Linked List in which a node's next pointer points to an earlier node, so as to make a loop in the linked list
+            DEFINITION: Circular Linked List: A (corrupt) Linked List in which a node's next pointer points to an earlier node, 
+            so as to make a loop in the linked list
 
             EXAMPLE: 
                 Input: A --> B --> C --> D --> E --> C [the same C as earlier]
