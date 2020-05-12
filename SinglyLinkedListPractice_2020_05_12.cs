@@ -4,6 +4,7 @@
         public static void Main(String[] args)
         {
             SinglyLinkedList singlyLL = new SinglyLinkedList();
+            
             singlyLL.appendTail(199);
             singlyLL.appendTail(188);
             singlyLL.appendTail(21);
