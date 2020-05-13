@@ -18,9 +18,18 @@ namespace LinkedListPractice
             nodeD.next = nodeE;
 
             Console.WriteLine("Head is: " + head.data);
-            Console.WriteLine("Head.next is: " + nodeB.data);
-            Console.WriteLine("Head.next.next is: " + nodeD.data);
-            Console.WriteLine("Head.next.next.next is: " + nodeE.data);
+            Console.WriteLine("Head.next is: " + head.next.data);
+            Console.WriteLine("Head.next.next is: " + head.next.next.data);
+            Console.WriteLine("Head.next.next.next is: " + head.next.next.next.data);
+            Console.WriteLine("Head.next.next.next.next is: " + head.next.next.next.next.data);
+            countNodes(head);
+
+            deleteNode(head, nodeC);
+
+            Console.WriteLine("Head is: " + head.data);
+            Console.WriteLine("Head.next is: " + head.next.data);
+            Console.WriteLine("Head.next.next is: " + head.next.next.data);
+            Console.WriteLine("Head.next.next.next is: " + head.next.next.next.data);
             countNodes(head);
         }
 
@@ -45,6 +54,20 @@ namespace LinkedListPractice
 
             Console.WriteLine("Node count is: " + nodeCount);
             return nodeCount;
+        }
+
+        
+        public static void deleteNode(Node head, Node nodeToDelete)
+        {
+            Node currentNode = head;
+
+            while(currentNode.next != nodeToDelete)
+            {
+                currentNode = currentNode.next;
+            }
+
+            currentNode.next = currentNode.next.next;
+            nodeToDelete = null;
         }
     }
 
