@@ -1,5 +1,4 @@
 using System;
-using System.Linq;
 
 namespace ExampleCodePlayground
 {
@@ -7,30 +6,22 @@ namespace ExampleCodePlayground
     {
         static void Main(string[] args)
         {
-            fibonacci(5);
+           Console.WriteLine(fibonacci(10));
         }
 
-        static int fibonacci(int n)
+        static int fibonacci(int x)
         {
-            if(n == 1)
+
+            if(x == 1)
             {
-                Console.WriteLine("n: " + fibonacci(n));
-                return 1;
+                return 1; //no need for recursive call here, just return it (because recursion needs a base-case to finish)
             }
 
-            else if(n == 2)
+            else
             {
-                Console.WriteLine("n: " + fibonacci(n));
-                return 1;
+                int result = x * fibonacci(x - 1); //more efficient way than "fibonacci(x - 1) + fibonacci(x - 2)" 
+                return result;
             }
-
-            else if (n > 2)
-            {
-                Console.WriteLine("n: " + fibonacci(n));
-                return fibonacci(n-1) + fibonacci(n-2);
-            }
-
-            return 0;
         }
     }
 }
