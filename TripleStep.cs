@@ -64,11 +64,6 @@ namespace TripleStep
             else
             {
                 return countWays(n - 1) + countWays(n - 2) + countWays(n - 3);
-                //(20 - 1) + (20 - 2) + (20 - 3)
-                //19 + 18  + 17 = 54
-                // n = 54
-                // 53 + 52 + 51
-                // 156
             }
         }
 
@@ -88,8 +83,7 @@ namespace TripleStep
         {
             //the base cases are the same as before
 
-                        //the base cases are the same as before
-            if(n < 0)
+             if(n < 0)
             {
                 return 0;
             }
@@ -106,7 +100,6 @@ namespace TripleStep
             }
 
             //now we do the recursion. This accounts for all other operations until the base case has been met
-            
             else
             {
                 cache[n] = compute_CountSteps(n - 1, cache) + compute_CountSteps(n - 2, cache) + compute_CountSteps(n - 3, cache);
