@@ -1,8 +1,6 @@
 using System;
 using System.Collections.Generic;
 
-namespace DictionaryCSharp
-{
     class Program
     {
         static void Main(string[] args)
@@ -86,5 +84,5 @@ namespace DictionaryCSharp
 
         public PokemonType PokemonType {get;set;}
     }
-}
+
 
