@@ -56,6 +56,7 @@ namespace DictionaryCSharp
             }
         }
     }
+    
     public enum PokemonType
     {
         Normal,
